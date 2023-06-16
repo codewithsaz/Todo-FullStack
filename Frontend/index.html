@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+        integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title></title>
+</head>
+
+<body>
+    <header id="main-header" class="bg-success text-white p-4 mb-3">
+
+        <h1 id="header-title">Todo</h1>
+        <!-- <div class="input-group mb-3 mr-auto" style="width: max-content;">
+            <input type="text" class="form-control " id="apiText" placeholder="Enter CRUD Api Key"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-primary" type="submit" id="apiBtn">Update</button>
+        </div> -->
+
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div id="main" class="card card-body">
+                    <h3 class="title">Todo Details</h3>
+                    <form id="addForm" class="form-control" autocomplete="on">
+                        <label for="title
+                    ">Todo Title: </label>
+                        <input type="text" class="form-control mb-3" id="title" placeholder="Title">
+
+                        <label for="task">Task </label>
+                        <input type="text" class="form-control mb-3" id="task" placeholder="What you wanna do?" on>
+                        <label for="date">Date</label>
+                        <input type="date" class="form-control mb-3" id="date">
+
+                        <input type="submit" class="btn btn-outline-primary mr-3 " id="submitBtn" value="Add">
+                        <button type="button" class="btn btn-outline-primary mr-3" id="updateBtn"
+                            style="visibility: hidden;">Update</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container">
+            <div id="main" class="card card-body">
+                <dv class="headTitle">
+                    <h3 class="title">Todos Remaining</h3>
+                    <!-- <p id="totalVal">Total Value:</p> -->
+
+                </dv>
+                <ul class="remainingTodos">
+                    <div id="todoRemainingList" class="row">
+
+                        <li id="noTodoRem" class="list-group-item col-auto mx-2 my-2 ">Hurray!! You completed all todos</li>
+                        <!-- <li class="list-unstyled col-auto mx-2 my-2 li_id">
+                            <div class="prod card" style="width: 18rem;" id="prodCard">
+                                <img src="https://www.hitechreview.com/uploads/2009/10/Canon-EOS-1D-Mark-IV1.jpg"
+                                    class="card-img-top" alt="Product" style="width: auto;  height: 215px;">
+                                <div class="card-body ">
+                                    <h5 class="card-title">&#8377 10000/- </h5>
+                                    <h6 class="card-subtitle mx-2 mb-2 text-body-secondary"
+                                        style="text-decoration: line-through; color: red;">
+                                        &#8377 999999</h6>
+                                    <h5 class="card-title">Canon Mark 5</h5>
+
+                                    <button id="delete" class="btn btn-danger float-end ml-4">Delete</button>
+                                    <button id="edit" class="btn btn-info float-end ml-5">Update</button>
+                                </div>
+
+                            </div>
+                        </li> -->
+                       
+
+                    </div>
+                </ul>
+
+                <dv class="headTitle">
+                    <h3 class="title">Todos Completed</h3>
+                    <!-- <p id="totalVal">Total Value:</p> -->
+
+                </dv>
+                <ul class="completedTodos">
+                    <div id="todoCompletedList" class="row">
+
+                        <li id="noTodoComp" class="list-group-item col-auto mx-2 my-2 ">Loading...</li>
+                        <!-- <li class="list-unstyled col-auto mx-2 my-2 li_id">
+                            <div class="prod card" style="width: 18rem;" id="prodCard">
+                                <img src="https://www.hitechreview.com/uploads/2009/10/Canon-EOS-1D-Mark-IV1.jpg"
+                                    class="card-img-top" alt="Product" style="width: auto;  height: 215px;">
+                                <div class="card-body ">
+                                    <h5 class="card-title">&#8377 10000/- </h5>
+                                    <h6 class="card-subtitle mx-2 mb-2 text-body-secondary"
+                                        style="text-decoration: line-through; color: red;">
+                                        &#8377 999999</h6>
+                                    <h5 class="card-title">Canon Mark 5</h5>
+
+                                    <button id="delete" class="btn btn-danger float-end ml-4">Delete</button>
+                                    <button id="edit" class="btn btn-info float-end ml-5">Update</button>
+                                </div>
+
+                            </div>
+                        </li>
+                         -->
+
+                    </div>
+                </ul>
+
+            </div>
+
+        </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="../Frontend/script.js"></script>
+
+</html>
